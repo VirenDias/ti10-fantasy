@@ -8,6 +8,7 @@ matches <- read.csv("data/matches.csv", colClasses = "character")
 fantasy_stats <- data.frame(
   match_id = as.character(), 
   hero_id = as.character(),
+  win = as.logical(),
   kills = as.integer(),
   deaths = as.integer(),
   creep_score = as.integer(),
@@ -37,6 +38,7 @@ for (match_id in unique(matches$match_id)) {
           add_row(
             match_id = as.character(match_id), 
             hero_id = as.character(hero_id),
+            win = as.logical(player$win),
             kills = as.integer(player$kills),
             deaths = as.integer(player$deaths),
             creep_score = as.integer(player$last_hits + player$denies),

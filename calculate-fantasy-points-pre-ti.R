@@ -18,6 +18,7 @@ fantasy_points <- fantasy_stats %>%
     player_id,
     match_id,
     hero_id,
+    win,
     kills = kills*0.3,
     deaths = 3 - deaths*0.3,
     creep_score = creep_score*0.003,
@@ -48,7 +49,7 @@ fantasy_summary <- fantasy_points %>%
   summarise(across(.cols = c(-match_id, -hero_id), .fns = mean)) %>%
   left_join(players, by = "player_id") %>%
   left_join(teams, by = "team_id") %>%
-  select(player_name, team_name, role, position, kills:total)
+  select(player_id, player_name, team_name, role, position, kills:total)
 
 write.csv(
   fantasy_summary, 
