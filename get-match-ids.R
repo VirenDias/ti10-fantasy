@@ -1,7 +1,7 @@
 library(tidyverse)
 library(httr)
 
-# Read in player information
+# Read in player data
 players <- read.csv("data/players.csv", colClasses = "character")
 
 # Create an empty dataframe to store the match data

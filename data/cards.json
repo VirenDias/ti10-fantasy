@@ -1,0 +1,2221 @@
+{
+    "cards": [
+        {
+            "player_account_id": 41231571,
+            "player_name": "s4",
+            "team_id": 111474,
+            "team_name": "Alliance",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21578880894"
+        },
+        {
+            "player_account_id": 153836240,
+            "player_name": "Chris luck",
+            "team_id": 8254400,
+            "team_name": "beastcoast",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21578844166"
+        },
+        {
+            "player_account_id": 164685175,
+            "player_name": "k1  ",
+            "team_id": 8254400,
+            "team_name": "beastcoast",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21578880890"
+        },
+        {
+            "player_account_id": 154715080,
+            "player_name": "Abed",
+            "team_id": 39,
+            "team_name": "Evil Geniuses",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21619048810"
+        },
+        {
+            "player_account_id": 86745912,
+            "player_name": "Arteezy",
+            "team_id": 39,
+            "team_name": "Evil Geniuses",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21579637302"
+        },
+        {
+            "player_account_id": 84772440,
+            "player_name": "iceiceice",
+            "team_id": 39,
+            "team_name": "Evil Geniuses",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21619055778"
+        },
+        {
+            "player_account_id": 113435203,
+            "player_name": "ChYuaN",
+            "team_id": 350190,
+            "team_name": "Fnatic",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21578827914"
+        },
+        {
+            "player_account_id": 100471531,
+            "player_name": "jabz",
+            "team_id": 350190,
+            "team_name": "Fnatic",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21579528470"
+        },
+        {
+            "player_account_id": 103735745,
+            "player_name": "Saksa",
+            "team_id": 2586976,
+            "team_name": "OG",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 25
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21618860706"
+        },
+        {
+            "player_account_id": 94054712,
+            "player_name": "Topson",
+            "team_id": 2586976,
+            "team_name": "OG",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21618753870"
+        },
+        {
+            "player_account_id": 898754153,
+            "player_name": "萧瑟",
+            "team_id": 15,
+            "team_name": "PSG.LGD",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 25
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21579546674"
+        },
+        {
+            "player_account_id": 118134220,
+            "player_name": "Faith_bian",
+            "team_id": 15,
+            "team_name": "PSG.LGD",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 25
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21618848686"
+        },
+        {
+            "player_account_id": 221666230,
+            "player_name": "Quinn",
+            "team_id": 7390454,
+            "team_name": "Quincy Crew",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21619448118"
+        },
+        {
+            "player_account_id": 81306398,
+            "player_name": "KJ",
+            "team_id": 8255756,
+            "team_name": "SG esports",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 25
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21623126558"
+        },
+        {
+            "player_account_id": 375507918,
+            "player_name": "23",
+            "team_id": 8214850,
+            "team_name": "T1",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21619140210"
+        },
+        {
+            "player_account_id": 94281932,
+            "player_name": "Karl",
+            "team_id": 8214850,
+            "team_name": "T1",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21201244970"
+        },
+        {
+            "player_account_id": 121404228,
+            "player_name": "Xepher",
+            "team_id": 8214850,
+            "team_name": "T1",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21625392942"
+        },
+        {
+            "player_account_id": 207829314,
+            "player_name": "Borax",
+            "team_id": 6209166,
+            "team_name": "Team Aster",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21619208254"
+        },
+        {
+            "player_account_id": 373520478,
+            "player_name": "White丶Album_白学家",
+            "team_id": 6209166,
+            "team_name": "Team Aster",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21624785294"
+        },
+        {
+            "player_account_id": 72312627,
+            "player_name": "MATUMBAMAN",
+            "team_id": 1838315,
+            "team_name": "Team Secret",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21619225046"
+        },
+        {
+            "player_account_id": 87278757,
+            "player_name": "Puppey",
+            "team_id": 1838315,
+            "team_name": "Team Secret",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 25
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21619227206"
+        },
+        {
+            "player_account_id": 73562326,
+            "player_name": "zai",
+            "team_id": 1838315,
+            "team_name": "Team Secret",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 25
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 25
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21201236950"
+        },
+        {
+            "player_account_id": 113331514,
+            "player_name": "Miposhka",
+            "team_id": 7119388,
+            "team_name": "Team Spirit",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21578816826"
+        },
+        {
+            "player_account_id": 256156323,
+            "player_name": "Mira",
+            "team_id": 7119388,
+            "team_name": "Team Spirit",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 25
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21623126554"
+        },
+        {
+            "player_account_id": 431770905,
+            "player_name": "TORONTOTOKYO",
+            "team_id": 7119388,
+            "team_name": "Team Spirit",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21625830370"
+        },
+        {
+            "player_account_id": 321580662,
+            "player_name": "Yatoro",
+            "team_id": 7119388,
+            "team_name": "Team Spirit",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21609573874"
+        },
+        {
+            "player_account_id": 107803494,
+            "player_name": "曾焦阳",
+            "team_id": 726228,
+            "team_name": "Vici Gaming",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21618783766"
+        },
+        {
+            "player_account_id": 134276083,
+            "player_name": "old eLeVeN",
+            "team_id": 726228,
+            "team_name": "Vici Gaming",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21578813618"
+        },
+        {
+            "player_account_id": 124801257,
+            "player_name": "Nightfall",
+            "team_id": 1883502,
+            "team_name": "Virtus.pro",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21625608450"
+        },
+        {
+            "player_account_id": 94049589,
+            "player_name": "Fng",
+            "team_id": 111474,
+            "team_name": "Alliance",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21578867306"
+        },
+        {
+            "player_account_id": 18180970,
+            "player_name": "Handsken",
+            "team_id": 111474,
+            "team_name": "Alliance",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 25
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 25
+                }
+            ],
+            "item_id": "21526595286"
+        },
+        {
+            "player_account_id": 12231202,
+            "player_name": "LIMMP",
+            "team_id": 111474,
+            "team_name": "Alliance",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21579637310"
+        },
+        {
+            "player_account_id": 412753955,
+            "player_name": "Nikobaby龙的传人",
+            "team_id": 111474,
+            "team_name": "Alliance",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21578852742"
+        },
+        {
+            "player_account_id": 157989498,
+            "player_name": "Scofield:❤KAT",
+            "team_id": 8254400,
+            "team_name": "beastcoast",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21526586826"
+        },
+        {
+            "player_account_id": 292921272,
+            "player_name": "Wisper",
+            "team_id": 8254400,
+            "team_name": "beastcoast",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21623241894"
+        },
+        {
+            "player_account_id": 137193239,
+            "player_name": "eurus",
+            "team_id": 8204512,
+            "team_name": "Elephant",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21578791346"
+        },
+        {
+            "player_account_id": 101695162,
+            "player_name": "fy",
+            "team_id": 8204512,
+            "team_name": "Elephant",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21619206390"
+        },
+        {
+            "player_account_id": 106863163,
+            "player_name": "Somnus丶M",
+            "team_id": 8204512,
+            "team_name": "Elephant",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21619176242"
+        },
+        {
+            "player_account_id": 90882159,
+            "player_name": "Super！",
+            "team_id": 8204512,
+            "team_name": "Elephant",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21619127962"
+        },
+        {
+            "player_account_id": 139937922,
+            "player_name": "Yang",
+            "team_id": 8204512,
+            "team_name": "Elephant",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21618844698"
+        },
+        {
+            "player_account_id": 25907144,
+            "player_name": "Cr1t-",
+            "team_id": 39,
+            "team_name": "Evil Geniuses",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21618760278"
+        },
+        {
+            "player_account_id": 94155156,
+            "player_name": "Fly",
+            "team_id": 39,
+            "team_name": "Evil Geniuses",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21578831282"
+        },
+        {
+            "player_account_id": 99983413,
+            "player_name": "Deth",
+            "team_id": 350190,
+            "team_name": "Fnatic",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21619101538"
+        },
+        {
+            "player_account_id": 102099826,
+            "player_name": "DJ",
+            "team_id": 350190,
+            "team_name": "Fnatic",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21579540018"
+        },
+        {
+            "player_account_id": 132309493,
+            "player_name": "Raven",
+            "team_id": 350190,
+            "team_name": "Fnatic",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21635932070"
+        },
+        {
+            "player_account_id": 132309493,
+            "player_name": "Raven",
+            "team_id": 350190,
+            "team_name": "Fnatic",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21619005542"
+        },
+        {
+            "player_account_id": 202217968,
+            "player_name": "Emo",
+            "team_id": 5,
+            "team_name": "INVICTUS GAMING",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21579566186"
+        },
+        {
+            "player_account_id": 168028715,
+            "player_name": "flyfly",
+            "team_id": 5,
+            "team_name": "INVICTUS GAMING",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21623000182"
+        },
+        {
+            "player_account_id": 138857296,
+            "player_name": "JT-",
+            "team_id": 5,
+            "team_name": "INVICTUS GAMING",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21618753874"
+        },
+        {
+            "player_account_id": 139876032,
+            "player_name": "kaka",
+            "team_id": 5,
+            "team_name": "INVICTUS GAMING",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21619249474"
+        },
+        {
+            "player_account_id": 101259972,
+            "player_name": "Oli~",
+            "team_id": 5,
+            "team_name": "INVICTUS GAMING",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21619048814"
+        },
+        {
+            "player_account_id": 88271237,
+            "player_name": "Ceb",
+            "team_id": 2586976,
+            "team_name": "OG",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 25
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21201281658"
+        },
+        {
+            "player_account_id": 19672354,
+            "player_name": "N0tail",
+            "team_id": 2586976,
+            "team_name": "OG",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21618767330"
+        },
+        {
+            "player_account_id": 111620041,
+            "player_name": "SumaiL",
+            "team_id": 2586976,
+            "team_name": "OG",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 25
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21618778114"
+        },
+        {
+            "player_account_id": 173978074,
+            "player_name": "NothingToSay",
+            "team_id": 15,
+            "team_name": "PSG.LGD",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21579134250"
+        },
+        {
+            "player_account_id": 157475523,
+            "player_name": "XinQ",
+            "team_id": 15,
+            "team_name": "PSG.LGD",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21579537702"
+        },
+        {
+            "player_account_id": 111114687,
+            "player_name": "y`",
+            "team_id": 15,
+            "team_name": "PSG.LGD",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21618856570"
+        },
+        {
+            "player_account_id": 87063175,
+            "player_name": "LESLÃO",
+            "team_id": 7390454,
+            "team_name": "Quincy Crew",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21621736690"
+        },
+        {
+            "player_account_id": 47434686,
+            "player_name": "LoA",
+            "team_id": 7390454,
+            "team_name": "Quincy Crew",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21578732054"
+        },
+        {
+            "player_account_id": 86726887,
+            "player_name": "MSS",
+            "team_id": 7390454,
+            "team_name": "Quincy Crew",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21621384390"
+        },
+        {
+            "player_account_id": 108452107,
+            "player_name": "YS",
+            "team_id": 7390454,
+            "team_name": "Quincy Crew",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21619166910"
+        },
+        {
+            "player_account_id": 85937380,
+            "player_name": "4dr ♥ Deia",
+            "team_id": 8255756,
+            "team_name": "SG esports",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21625636170"
+        },
+        {
+            "player_account_id": 86822085,
+            "player_name": "Costabile",
+            "team_id": 8255756,
+            "team_name": "SG esports",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21579551006"
+        },
+        {
+            "player_account_id": 117956848,
+            "player_name": "tavo",
+            "team_id": 8255756,
+            "team_name": "SG esports",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21579526334"
+        },
+        {
+            "player_account_id": 105045291,
+            "player_name": "Thiolicor",
+            "team_id": 8255756,
+            "team_name": "SG esports",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 25
+                },
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21201313290"
+        },
+        {
+            "player_account_id": 184950344,
+            "player_name": "Ku",
+            "team_id": 8214850,
+            "team_name": "T1",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 25
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21578730898"
+        },
+        {
+            "player_account_id": 136829091,
+            "player_name": "Whitemon",
+            "team_id": 8214850,
+            "team_name": "T1",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21579136746"
+        },
+        {
+            "player_account_id": 121404228,
+            "player_name": "Xepher",
+            "team_id": 8214850,
+            "team_name": "T1",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 25
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21635932074"
+        },
+        {
+            "player_account_id": 89423756,
+            "player_name": "LaNm",
+            "team_id": 6209166,
+            "team_name": "Team Aster",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21201331662"
+        },
+        {
+            "player_account_id": 148215639,
+            "player_name": "Monet",
+            "team_id": 6209166,
+            "team_name": "Team Aster",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21201313286"
+        },
+        {
+            "player_account_id": 121769650,
+            "player_name": "Nisha",
+            "team_id": 1838315,
+            "team_name": "Team Secret",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21578726042"
+        },
+        {
+            "player_account_id": 89117038,
+            "player_name": "YapzOr",
+            "team_id": 1838315,
+            "team_name": "Team Secret",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21619178926"
+        },
+        {
+            "player_account_id": 302214028,
+            "player_name": "Collapse",
+            "team_id": 7119388,
+            "team_name": "Team Spirit",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21579537694"
+        },
+        {
+            "player_account_id": 407321629,
+            "player_name": "Frank",
+            "team_id": 7391077,
+            "team_name": "Thunder Predator",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21619190886"
+        },
+        {
+            "player_account_id": 59463394,
+            "player_name": "Leostyle- ",
+            "team_id": 7391077,
+            "team_name": "Thunder Predator",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21579537698"
+        },
+        {
+            "player_account_id": 186837494,
+            "player_name": "Mjz",
+            "team_id": 7391077,
+            "team_name": "Thunder Predator",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21619245910"
+        },
+        {
+            "player_account_id": 95825708,
+            "player_name": "MNZ",
+            "team_id": 7391077,
+            "team_name": "Thunder Predator",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21622690114"
+        },
+        {
+            "player_account_id": 349310876,
+            "player_name": "MoOz",
+            "team_id": 7391077,
+            "team_name": "Thunder Predator",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21579528474"
+        },
+        {
+            "player_account_id": 145550466,
+            "player_name": "DuBu",
+            "team_id": 8260983,
+            "team_name": "Undying",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21619242430"
+        },
+        {
+            "player_account_id": 38628747,
+            "player_name": "MoonMeander",
+            "team_id": 8260983,
+            "team_name": "Undying",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21619229614"
+        },
+        {
+            "player_account_id": 126212866,
+            "player_name": "SabeRLighT",
+            "team_id": 8260983,
+            "team_name": "Undying",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 3,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21619178922"
+        },
+        {
+            "player_account_id": 97658618,
+            "player_name": "Timado",
+            "team_id": 8260983,
+            "team_name": "Undying",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21578726046"
+        },
+        {
+            "player_account_id": 143693439,
+            "player_name": "Dy",
+            "team_id": 726228,
+            "team_name": "Vici Gaming",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21618856574"
+        },
+        {
+            "player_account_id": 277141004,
+            "player_name": "poyoyo",
+            "team_id": 726228,
+            "team_name": "Vici Gaming",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21618848702"
+        },
+        {
+            "player_account_id": 138543123,
+            "player_name": "Pyw",
+            "team_id": 726228,
+            "team_name": "Vici Gaming",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21579535174"
+        },
+        {
+            "player_account_id": 56351509,
+            "player_name": "DM",
+            "team_id": 1883502,
+            "team_name": "Virtus.pro",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21619155830"
+        },
+        {
+            "player_account_id": 480412663,
+            "player_name": "gpk~",
+            "team_id": 1883502,
+            "team_name": "Virtus.pro",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 25
+                },
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21578722918"
+        },
+        {
+            "player_account_id": 187758589,
+            "player_name": "Kingslayer",
+            "team_id": 1883502,
+            "team_name": "Virtus.pro",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21622679882"
+        },
+        {
+            "player_account_id": 317880638,
+            "player_name": "Save-",
+            "team_id": 1883502,
+            "team_name": "Virtus.pro",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 1,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 7,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21619371250"
+        },
+        {
+            "player_account_id": 119631156,
+            "player_name": "ST!NG3R",
+            "team_id": 8254400,
+            "team_name": "beastcoast",
+            "role": 2,
+            "bonuses": [],
+            "item_id": "21578728410"
+        },
+        {
+            "player_account_id": 129958758,
+            "player_name": "Xxs",
+            "team_id": 6209166,
+            "team_name": "Team Aster",
+            "role": 1,
+            "bonuses": [],
+            "item_id": "21578790242"
+        },
+        {
+            "player_account_id": 238239590,
+            "player_name": "Bryle",
+            "team_id": 8260983,
+            "team_name": "Undying",
+            "role": 4,
+            "bonuses": [],
+            "item_id": "21201281670"
+        }
+    ]
+}

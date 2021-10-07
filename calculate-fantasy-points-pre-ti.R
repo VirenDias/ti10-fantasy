@@ -1,6 +1,6 @@
 library(tidyverse)
 
-# Read in player, team, and fantasy information
+# Read in player, team, and fantasy data
 players <- read.csv("data/players.csv", colClasses = "character")
 teams <- read.csv("data/teams.csv", colClasses = "character")
 fantasy_stats <- read.csv(

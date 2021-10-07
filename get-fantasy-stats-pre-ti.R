@@ -1,7 +1,7 @@
 library(tidyverse)
 library(httr)
 
-# Read in match information
+# Read in match data
 matches <- read.csv("data/matches.csv", colClasses = "character")
 
 # Create an empty dataframe to store the fantasy-related statistics
