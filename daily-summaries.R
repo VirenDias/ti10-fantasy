@@ -31,21 +31,24 @@ average_ti <- read.csv(
   group_by(player_id) %>%
   summarise(across(.cols = c(-match_id, -hero_id, -match_time), .fns = mean))
 
-avg_best_2 <- function(fantasy_points) {
-  sets <- combinations(
-    n = length(fantasy_points), 
+avg_bo3 <- function(matches, win, totals) {
+  series <- combinations(
+    n = length(matches), 
     r = 3, 
-    v = fantasy_points, 
+    v = matches, 
     set = FALSE
   )
   
   best_2 <- c()
-  for (row in 1:nrow(sets)) {
-    best_2 <- c(best_2, sort(sets[row, ], decreasing = TRUE)[1:2])
+  for (i in 1:nrow(series)) {
+    indices <- match(series[i, ], matches)
+    if (sum(win[indices]) %in% c(1, 2)) {
+      best_2 <- c(best_2, sort(totals[indices], decreasing = TRUE)[1:2])
+    }
   }
   return(mean(best_2))
 }
-average_ti_best_2 <- read.csv(
+average_ti_bo3 <- read.csv(
   "data/fantasy_points_ti.csv",
   colClasses = c(
     player_id = "character",
@@ -54,7 +57,7 @@ average_ti_best_2 <- read.csv(
   )
 ) %>%
   group_by(player_id) %>%
-  summarise(best_2 = avg_best_2(total))
+  summarise(total_bo3 = avg_bo3(match_id, win, total))
 
 # Calculate daily predictions and results
 calculate_daily <- function(playing_teams, average_final, start, end) {
