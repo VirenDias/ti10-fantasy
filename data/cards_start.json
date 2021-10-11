@@ -91,36 +91,6 @@
             "item_id": "21578880890"
         },
         {
-            "player_account_id": 106863163,
-            "player_name": "Somnus丶M",
-            "team_id": 8204512,
-            "team_name": "Elephant",
-            "role": 4,
-            "bonuses": [
-                {
-                    "bonus_stat": 1,
-                    "bonus_value": 10
-                },
-                {
-                    "bonus_stat": 2,
-                    "bonus_value": 10
-                },
-                {
-                    "bonus_stat": 3,
-                    "bonus_value": 20
-                },
-                {
-                    "bonus_stat": 8,
-                    "bonus_value": 20
-                },
-                {
-                    "bonus_stat": 10,
-                    "bonus_value": 20
-                }
-            ],
-            "item_id": "21699090978"
-        },
-        {
             "player_account_id": 154715080,
             "player_name": "Abed",
             "team_id": 39,
@@ -1099,6 +1069,28 @@
             "item_id": "21619206390"
         },
         {
+            "player_account_id": 106863163,
+            "player_name": "Somnus丶M",
+            "team_id": 8204512,
+            "team_name": "Elephant",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 2,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 5
+                }
+            ],
+            "item_id": "21619176242"
+        },
+        {
             "player_account_id": 90882159,
             "player_name": "Super！",
             "team_id": 8204512,
@@ -1823,6 +1815,116 @@
                 }
             ],
             "item_id": "21579537694"
+        },
+        {
+            "player_account_id": 407321629,
+            "player_name": "Frank",
+            "team_id": 7391077,
+            "team_name": "Thunder Predator",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 5,
+                    "bonus_value": 5
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 15
+                }
+            ],
+            "item_id": "21619190886"
+        },
+        {
+            "player_account_id": 59463394,
+            "player_name": "Leostyle- ",
+            "team_id": 7391077,
+            "team_name": "Thunder Predator",
+            "role": 4,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 10
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21579537698"
+        },
+        {
+            "player_account_id": 186837494,
+            "player_name": "Mjz",
+            "team_id": 7391077,
+            "team_name": "Thunder Predator",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 8,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 11,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21619245910"
+        },
+        {
+            "player_account_id": 95825708,
+            "player_name": "MNZ",
+            "team_id": 7391077,
+            "team_name": "Thunder Predator",
+            "role": 1,
+            "bonuses": [
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 9,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 10,
+                    "bonus_value": 20
+                }
+            ],
+            "item_id": "21622690114"
+        },
+        {
+            "player_account_id": 349310876,
+            "player_name": "MoOz",
+            "team_id": 7391077,
+            "team_name": "Thunder Predator",
+            "role": 2,
+            "bonuses": [
+                {
+                    "bonus_stat": 0,
+                    "bonus_value": 15
+                },
+                {
+                    "bonus_stat": 4,
+                    "bonus_value": 20
+                },
+                {
+                    "bonus_stat": 6,
+                    "bonus_value": 10
+                }
+            ],
+            "item_id": "21579528474"
         },
         {
             "player_account_id": 145550466,
