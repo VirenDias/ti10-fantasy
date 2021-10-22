@@ -68,7 +68,8 @@ d3.csv("./resources/ti10_fantasy_points.csv")
       .style("font-size", axisTitleFontSize);
 
     // Update the chart ------------------------------------------------------------------------------------------------
-    var renderChart = function(filterPosition, filterOutcome, filterHero, filterIndicator) {
+    // var renderChart = function(filterPosition, filterOutcome, filterHero, filterIndicator) {
+    var renderChart = function(filterPosition, filterOutcome, filterIndicator) {
       // Filter the data
       let filteredData = rawData;
       if (filterPosition != "all") {
@@ -77,9 +78,9 @@ d3.csv("./resources/ti10_fantasy_points.csv")
       if (filterOutcome != "all") {
         filteredData = filteredData.filter(d => d.outcome.toLowerCase() == filterOutcome)
       }
-      if (filterHero.toLowerCase() != "all") {
-        filteredData = filteredData.filter(d => d.hero_name == filterHero)
-      }
+      // if (filterHero.toLowerCase() != "all") {
+      //   filteredData = filteredData.filter(d => d.hero_name == filterHero)
+      // }
       const relevantData = filteredData;
 
       // Draw the axes
@@ -146,7 +147,8 @@ d3.csv("./resources/ti10_fantasy_points.csv")
             .style("fill", d3.color(d3.select(this).attr("fill")));
         })
     }
-    renderChart("carry", "all", "all", "total");
+    // renderChart("carry", "all", "all", "total");
+    renderChart("carry", "all", "total");
 
     // Add hero dropdown options
     const heroList = new Set(rawData.map(d => d.hero_name));
@@ -166,7 +168,7 @@ d3.csv("./resources/ti10_fantasy_points.csv")
         renderChart(
           filterPosition = d3.select("#vis-match-player .btn-filter-position .active").attr("d"),
           filterOutcome = d3.select("#vis-match-player .btn-filter-outcome .active").attr("d"),
-          filterHero = d3.select("#vis-match-player .btn-filter-hero button").html(),
+          // filterHero = d3.select("#vis-match-player .btn-filter-hero button").html(),
           filterIndicator = d3.select("#vis-match-player .btn-filter-indicator .active").attr("d")
         );
       });
@@ -179,22 +181,22 @@ d3.csv("./resources/ti10_fantasy_points.csv")
         renderChart(
           filterPosition = d3.select("#vis-match-player .btn-filter-position .active").attr("d"),
           filterOutcome = d3.select("#vis-match-player .btn-filter-outcome .active").attr("d"),
-          filterHero = d3.select("#vis-match-player .btn-filter-hero button").html(),
+          // filterHero = d3.select("#vis-match-player .btn-filter-hero button").html(),
           filterIndicator = d3.select("#vis-match-player .btn-filter-indicator .active").attr("d")
         );
       });
 
-    d3.select("#vis-match-player .btn-filter-hero")
-      .selectAll("li")
-      .on("click", function() {
-        d3.select("#vis-match-player .btn-filter-hero").select("button").html(d3.select(this).html());
-        renderChart(
-          filterPosition = d3.select("#vis-match-player .btn-filter-position .active").attr("d"),
-          filterOutcome = d3.select("#vis-match-player .btn-filter-outcome .active").attr("d"),
-          filterHero = d3.select("#vis-match-player .btn-filter-hero button").html(),
-          filterIndicator = d3.select("#vis-match-player .btn-filter-indicator .active").attr("d")
-        );
-      });
+    // d3.select("#vis-match-player .btn-filter-hero")
+    //   .selectAll("li")
+    //   .on("click", function() {
+    //     d3.select("#vis-match-player .btn-filter-hero").select("button").html(d3.select(this).html());
+    //     renderChart(
+    //       filterPosition = d3.select("#vis-match-player .btn-filter-position .active").attr("d"),
+    //       filterOutcome = d3.select("#vis-match-player .btn-filter-outcome .active").attr("d"),
+    //       filterHero = d3.select("#vis-match-player .btn-filter-hero button").html(),
+    //       filterIndicator = d3.select("#vis-match-player .btn-filter-indicator .active").attr("d")
+    //     );
+    //   });
 
     d3.select("#vis-match-player .btn-filter-indicator")
       .selectAll("button")
@@ -204,7 +206,7 @@ d3.csv("./resources/ti10_fantasy_points.csv")
         renderChart(
           filterPosition = d3.select("#vis-match-player .btn-filter-position .active").attr("d"),
           filterOutcome = d3.select("#vis-match-player .btn-filter-outcome .active").attr("d"),
-          filterHero = d3.select("#vis-match-player .btn-filter-hero button").html(),
+          // filterHero = d3.select("#vis-match-player .btn-filter-hero button").html(),
           filterIndicator = d3.select("#vis-match-player .btn-filter-indicator .active").attr("d")
         );
       });
