@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Hawkie · TI10 Fantasy Visualizations</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="display-1 text-center pt-4 pb-4">Hawkie's TI10 Fantasy Visualizations</h1>
+
+    <!-- Player visualization -->
+    <div id="vis-player" style="padding: 1.5rem 0;">
+      <h3>Player-wise Statistics</h3>
+      <div class="row">
+        <div class="col-md-auto">
+          <h6>Filter by position</h6>
+          <div class="btn-group btn-filter-position">
+            <button type="button" class="btn btn-outline-dark btn-sm active" d="all">All</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="carry">Carry</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="mid">Mid</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="off">Off</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="soft support">Soft Support</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="hard support">Hard Support</button>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <h6>Filter by outcome</h6>
+          <div class="btn-group btn-filter-outcome">
+            <button type="button" class="btn btn-outline-dark btn-sm active" d="all">All</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="win">Wins</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="loss">Losses</button>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <h6>Sort by</h6>
+          <div class="btn-group btn-sort">
+            <button type="button" class="btn btn-outline-dark btn-sm active" d="name">Name</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="value">Value</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Position visualization -->
+    <div id="vis-position" style="padding: 1.5rem 0;">
+      <h3>Position-wise Statistics</h3>
+    </div>
+
+    <!-- Hero visualization -->
+    <div id="vis-hero" style="padding: 1.5rem 0;">
+      <h3>Hero-wise Statistics</h3>
+      <p><em>Note: A minimum of 5 games is required after applying the selected filters.</em></p>
+      <div class="row">
+        <div class="col-md-auto">
+          <h6>Filter by position</h6>
+          <div class="btn-group btn-filter-position">
+            <button type="button" class="btn btn-outline-dark btn-sm active" d="all">All</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="carry">Carry</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="mid">Mid</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="off">Off</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="support">Support</button>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <h6>Filter by outcome</h6>
+          <div class="btn-group btn-filter-outcome">
+            <button type="button" class="btn btn-outline-dark btn-sm active" d="all">All</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="win">Wins</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="loss">Losses</button>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <h6>Sort by</h6>
+          <div class="btn-group btn-sort">
+            <button type="button" class="btn btn-outline-dark btn-sm active" d="name">Name</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="value">Value</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Player-hero visualization -->
+    <div id="vis-player-hero" style="padding: 1.5rem 0;">
+      <h3>Player-Hero–wise Statistics</h3>
+      <p><em>Note: A minimum of 5 games is required after applying the selected filters.</em></p>
+      <div class="row">
+        <div class="col-md-auto">
+          <h6>Filter by position</h6>
+          <div class="btn-group btn-filter-position">
+            <button type="button" class="btn btn-outline-dark btn-sm active" d="all">All</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="carry">Carry</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="mid">Mid</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="off">Off</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="support">Support</button>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <h6>Sort by</h6>
+          <div class="btn-group btn-sort">
+            <button type="button" class="btn btn-outline-dark btn-sm active" d="name">Name</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="value">Value</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicator visualization -->
+    <div id="vis-indicator" style="padding: 1.5rem 0;">
+      <h3>Indicator-wise Statistics</h3>
+      <div class="row">
+        <div class="col-md-auto">
+          <h6>Filter by position</h6>
+          <div class="btn-group btn-filter-position">
+            <button type="button" class="btn btn-outline-dark btn-sm active" d="all">All</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="carry">Carry</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="mid">Mid</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="off">Off</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="soft support">Soft Support</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="hard support">Hard Support</button>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <h6>Filter by outcome</h6>
+          <div class="btn-group btn-filter-outcome">
+            <button type="button" class="btn btn-outline-dark btn-sm active" d="all">All</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="win">Wins</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="loss">Losses</button>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <h6>Sort by</h6>
+          <div class="btn-group btn-sort">
+            <button type="button" class="btn btn-outline-dark btn-sm active" d="name">Name</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="value">Value</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Match-player visualization -->
+    <div id="vis-match-player" style="padding: 1.5rem 0;">
+      <h3>Match-Player–wise Statistics</h3>
+      <div class="row">
+        <div class="col-md-auto">
+          <h6>Filter by position</h6>
+          <div class="btn-group btn-filter-position">
+            <button type="button" class="btn btn-outline-dark btn-sm" d="all">All</button>
+            <button type="button" class="btn btn-outline-dark btn-sm active" d="carry">Carry</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="mid">Mid</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="off">Off</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="soft support">Soft Support</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="hard support">Hard Support</button>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <h6>Filter by outcome</h6>
+          <div class="btn-group btn-filter-outcome">
+            <button type="button" class="btn btn-outline-dark btn-sm active" d="all">All</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="win">Wins</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="loss">Losses</button>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <h6>Filter by hero</h6>
+          <div class="dropdown btn-filter-hero">
+            <button class="btn btn-outline-dark btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">All</button>
+            <ul class="dropdown-menu" style="max-height: 200px; overflow-y: auto;">
+              <li class="dropdown-item">All</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 8px;">
+        <div class="col-md-auto">
+          <h6>Filter by indicator</h6>
+          <div class="btn-group btn-filter-indicator">
+            <button type="button" class="btn btn-outline-dark btn-sm active" d="total">Total</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="kills">Kills</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="deaths">Deaths</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="creep_score">Creep Score</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="gold_per_min">Gold Per Min</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="tower_kills">Tower Kills</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="roshan_kills">Roshan Kills</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="team_fight">Teamfight</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="obs_wards_planted">Obs Wards</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="camps_stacked">Camps Stacked</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="runes_grabbed">Runes Grabbed</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="first_blood">First Blood</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="stuns">Stuns</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- <script src="./js/all.js"></script> -->
+  <script src="./js/vis-player.js"></script>
+  <script src="./js/vis-position.js"></script>
+  <script src="./js/vis-hero.js"></script>
+  <script src="./js/vis-player-hero.js"></script>
+  <script src="./js/vis-indicator.js"></script>
+  <script src="./js/vis-match-player.js"></script>
+</body>
+
+</html>
