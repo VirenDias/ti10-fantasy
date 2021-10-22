@@ -73,6 +73,9 @@ get_fantasy_stats_ti <- function(update = FALSE) {
   fantasy_stats_ti <- data.frame(
     match_id = as.character(),
     match_time = as.integer(),
+    match_duration = as.integer(),
+    series_id = as.character(),
+    series_type = as.integer(),
     player_id = as.character(),
     hero_id = as.character(),
     win = as.logical(),
@@ -96,6 +99,7 @@ get_fantasy_stats_ti <- function(update = FALSE) {
       colClasses = c(
         player_id = "character",
         match_id = "character",
+        series_id = "character",
         hero_id = "character"
       )
     )
@@ -113,6 +117,9 @@ get_fantasy_stats_ti <- function(update = FALSE) {
         add_row(
           match_id = as.character(match_id), 
           match_time = as.integer(content(response)$start_time),
+          match_duration = as.integer(content(response)$duration),
+          series_id = as.character(content(response)$series_id),
+          series_type = as.integer(content(response)$series_type),
           player_id = as.character(player$account_id),
           hero_id = as.character(player$hero_id),
           win = as.logical(player$win),

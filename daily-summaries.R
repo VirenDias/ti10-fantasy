@@ -1,4 +1,5 @@
 library(tidyverse)
+library(gtools)
 library(rjson)
 
 # Calculate pre-TI and TI summaries
@@ -29,7 +30,12 @@ average_ti <- read.csv(
   )
 ) %>%
   group_by(player_id) %>%
-  summarise(across(.cols = c(-match_id, -hero_id, -match_time), .fns = mean))
+  summarise(
+    across(
+      .cols = c(-match_id, -match_time, -series_id, -series_type, -hero_id),
+      .fns = mean
+    )
+  )
 
 avg_bo3 <- function(matches, win, totals) {
   series <- combinations(
@@ -59,6 +65,35 @@ average_ti_bo3 <- read.csv(
   group_by(player_id) %>%
   summarise(total_bo3 = avg_bo3(match_id, win, total))
 
+avg_bo5 <- function(matches, win, totals) {
+  series <- combinations(
+    n = length(matches), 
+    r = 5, 
+    v = matches, 
+    set = FALSE
+  )
+  
+  best_3 <- c()
+  for (i in 1:nrow(series)) {
+    indices <- match(series[i, ], matches)
+    if (sum(win[indices]) %in% c(1, 2, 3)) {
+      best_3 <- c(best_3, sort(totals[indices], decreasing = TRUE)[1:3])
+    }
+  }
+  return(mean(best_3))
+}
+average_ti_bo5 <- read.csv(
+  "data/fantasy_points_ti.csv",
+  colClasses = c(
+    player_id = "character",
+    match_id = "character",
+    hero_id = "character"
+  )
+) %>%
+  filter(player_id != "182439266") %>%
+  group_by(player_id) %>%
+  summarise(total_bo5 = avg_bo5(match_id, win, total))
+
 # Calculate daily predictions and results
 calculate_daily <- function(playing_teams, average_final, start, end) {
   metadata <- read.csv("data/players.csv", colClasses = "character") %>%
@@ -72,14 +107,16 @@ calculate_daily <- function(playing_teams, average_final, start, end) {
     inner_join(average_final, by = "player_id") %>%
     select(-(win:stuns)) %>%
     filter(team_name %in% playing_teams) %>%
-    arrange(-total)
+    arrange(-total) %>%
+    rename(average = total)
   prediction_cards <- metadata %>%
     inner_join(calculate_card_bonuses(average_final), by = "player_id") %>%
     select(-(win:stuns)) %>%
     filter(team_name %in% playing_teams) %>%
-    arrange(-total)
+    arrange(-total) %>%
+    rename(average = total)
   
-  average_results <- read.csv(
+  fantasy_points <- read.csv(
     "data/fantasy_points_ti.csv",
     colClasses = c(
       player_id = "character",
@@ -87,16 +124,35 @@ calculate_daily <- function(playing_teams, average_final, start, end) {
       hero_id = "character"
     )
   ) %>%
-    filter(match_time >= start, match_time < end) %>%
+    filter(match_time >= start, match_time < end) 
+  discard_bo3 <- fantasy_points %>%
+    group_by(player_id, series_id) %>%
+    filter(series_type == 1, n() > 2) %>%
+    arrange(total) %>%
+    slice(1) %>%
+    ungroup()
+  discard_bo5 <- fantasy_points %>%
+    group_by(player_id, series_id) %>%
+    filter(series_type == 2, n() > 3) %>%
+    arrange(total) %>%
+    slice(c(1, 2)) %>%
+    ungroup()
+  fantasy_points_total <- fantasy_points %>%
+    anti_join(discard_bo3, by = c("player_id", "match_id")) %>%
+    anti_join(discard_bo5, by = c("player_id", "match_id")) %>%
     group_by(player_id) %>%
-    summarise(across(.cols = win:total, .fns = mean))
+    summarise(across(.cols = win:total, .fns = sum))
+  
   results <- metadata %>%
-    inner_join(average_results, by = "player_id") %>%
+    inner_join(fantasy_points_total, by = "player_id") %>%
     filter(team_name %in% playing_teams) %>%
     select(-(win:stuns)) %>%
     arrange(-total)
   results_cards <- metadata %>%
-    inner_join(calculate_card_bonuses(average_results), by = "player_id") %>%
+    inner_join(
+      calculate_card_bonuses(fantasy_points_total), 
+      by = "player_id"
+    ) %>%
     filter(team_name %in% playing_teams) %>%
     select(-(win:stuns)) %>%
     arrange(-total)
@@ -223,4 +279,78 @@ main_d1 <- calculate_daily(
   average_final = average_ti,
   start = 1633586400 + (5*86400),
   end = 1633586400 + (6*86400)
+)
+
+# Main Stage Day 2
+main_d2 <- calculate_daily(
+  playing_teams = c(
+    "Fnatic",
+    "OG",
+    "PSG.LGD",
+    "T1",
+    "Quincy Crew",
+    "Vici Gaming",
+    "Virtus.pro",
+    "Team Spirit"
+  ),
+  average_final = average_ti,
+  start = 1633586400 + (6*86400),
+  end = 1633586400 + (7*86400)
+)
+
+# Main Stage Day 3
+main_d3 <- calculate_daily(
+  playing_teams = c(
+    "Alliance",
+    "Evil Geniuses",
+    "INVICTUS GAMING",
+    "PSG.LGD",
+    "T1",
+    "Team Secret",
+    "Vici Gaming",
+    "Virtus.pro"
+  ),
+  average_final = average_ti,
+  start = 1633586400 + (7*86400),
+  end = 1633586400 + (8*86400)
+)
+
+# Main Stage Day 4
+main_d4 <- calculate_daily(
+  playing_teams = c(
+    "OG",
+    "T1",
+    "Team Spirit",
+    "Vici Gaming",
+    "Virtus.pro"
+  ),
+  average_final = average_ti,
+  start = 1633586400 + (8*86400),
+  end = 1633586400 + (9*86400)
+)
+
+# Main Stage Day 5
+main_d5 <- calculate_daily(
+  playing_teams = c(
+    "INVICTUS GAMING",
+    "PSG.LGD",
+    "Team Secret",
+    "Team Spirit",
+    "Vici Gaming"
+  ),
+  average_final = average_ti,
+  start = 1633586400 + (9*86400),
+  end = 1633586400 + (10*86400)
+)
+
+# Main Stage Day 6
+main_d6 <- calculate_daily(
+  playing_teams = c(
+    "PSG.LGD",
+    "Team Secret",
+    "Team Spirit"
+  ),
+  average_final = average_ti,
+  start = 1633586400 + (10*86400),
+  end = 1633586400 + (11*86400)
 )

@@ -1,7 +1,7 @@
 library(tidyverse)
 library(rjson)
 
-calculate_card_bonuses <- function(fantasy_summary) {
+calculate_card_bonuses <- function(fantasy_points) {
   # Read in the card and fantasy data
   cards_json <- fromJSON(file = "data/cards.json")$cards
   
@@ -70,7 +70,7 @@ calculate_card_bonuses <- function(fantasy_summary) {
   }
   
   # Calculate the total fantasy points per card with bonuses
-  card_summary <- fantasy_summary %>%
+  card_summary <- fantasy_points %>%
     right_join(cards, by = "player_id", suffix = c("", "_bonus")) %>%
     mutate(across(ends_with("_bonus"), .fns = ~1 + ./100)) %>%
     mutate(
