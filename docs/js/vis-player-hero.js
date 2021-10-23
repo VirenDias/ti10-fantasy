@@ -83,10 +83,10 @@ d3.csv("./resources/ti10_fantasy_points.csv")
 
       const flattenedData = new Map;
       relevantData.forEach(function(value, key) {
-        if(value.size > 0) {
+        if (value.size > 0) {
           value.forEach((subValue, subKey) => flattenedData.set(key + " | " + subKey, subValue));
-          }
-        })
+        }
+      })
 
       // Sort the data
       let sortedData = [];
@@ -196,4 +196,20 @@ d3.csv("./resources/ti10_fantasy_points.csv")
           sort = d3.select("#vis-player-hero .btn-sort .active").attr("d")
         );
       });
+
+    // Define navbar behaviour
+    d3.select("#navbar .btn-vis-player-hero")
+      .on("click", function() {
+        if (!d3.select(this).classed("active")) {
+          d3.select("#navbar").selectAll("button").classed("active", false);
+          d3.select(this).classed("active", true);
+          d3.selectAll(".visualization").style("display", "none");
+          d3.select("#" + d3.select(this).attr("d")).style("display", "block");
+          d3.selectAll("svg").select("g").selectAll("*").remove();
+          renderChart(
+            filterPosition = d3.select("#vis-player-hero .btn-filter-position .active").attr("d"),
+            sort = d3.select("#vis-player-hero .btn-sort .active").attr("d")
+          );
+        }
+      })
   })

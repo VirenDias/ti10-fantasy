@@ -192,4 +192,21 @@ d3.csv("./resources/ti10_fantasy_points.csv")
           sort = d3.select("#vis-player .btn-sort .active").attr("d")
         );
       });
+
+    // Define navbar behaviour
+    d3.select("#navbar .btn-vis-player")
+      .on("click", function() {
+        if(!d3.select(this).classed("active")) {
+          d3.select("#navbar").selectAll("button").classed("active", false);
+          d3.select(this).classed("active", true);
+          d3.selectAll(".visualization").style("display", "none");
+          d3.select("#" + d3.select(this).attr("d")).style("display", "block");
+          d3.selectAll("svg").select("g").selectAll("*").remove();
+          renderChart(
+            filterPosition = d3.select("#vis-player .btn-filter-position .active").attr("d"),
+            filterOutcome = d3.select("#vis-player .btn-filter-outcome .active").attr("d"),
+            sort = d3.select("#vis-player .btn-sort .active").attr("d")
+          );
+        }
+      })
   })

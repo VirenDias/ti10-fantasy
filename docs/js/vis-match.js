@@ -11,7 +11,7 @@ d3.csv("./resources/ti10_fantasy_points.csv")
 
     const plotPadding = 5;
 
-    d3.select("#vis-match-player")
+    d3.select("#vis-match")
       .append("svg")
       .attr("preserveAspectRatio", "xMidYMin meet")
       .attr("viewBox", [0, 0, canvasWidth, canvasHeight])
@@ -19,10 +19,10 @@ d3.csv("./resources/ti10_fantasy_points.csv")
       .style("max-width", "100vw")
       .append("g")
 
-    const svg = d3.select("#vis-match-player")
+    const svg = d3.select("#vis-match")
       .select("svg")
 
-    const chartGroup = d3.select("#vis-match-player")
+    const chartGroup = d3.select("#vis-match")
       .select("svg")
       .select("g")
 
@@ -151,63 +151,81 @@ d3.csv("./resources/ti10_fantasy_points.csv")
     renderChart("carry", "all", "total");
 
     // Add hero dropdown options
-    const heroList = new Set(rawData.map(d => d.hero_name));
-    d3.sort(heroList).forEach(function(d) {
-      d3.select("#vis-match-player .btn-filter-hero ul")
-        .append("li")
-        .classed("dropdown-item", true)
-        .html(d);
-    });
+    // const heroList = new Set(rawData.map(d => d.hero_name));
+    // d3.sort(heroList).forEach(function(d) {
+    //   d3.select("#vis-match .btn-filter-hero ul")
+    //     .append("li")
+    //     .classed("dropdown-item", true)
+    //     .html(d);
+    // });
 
     // Define button behaviour -----------------------------------------------------------------------------------------
-    d3.select("#vis-match-player .btn-filter-position")
+    d3.select("#vis-match .btn-filter-position")
       .selectAll("button")
       .on("click", function() {
-        d3.select("#vis-match-player .btn-filter-position").selectAll("button").classed("active", false);
+        d3.select("#vis-match .btn-filter-position").selectAll("button").classed("active", false);
         d3.select(this).classed("active", true);
         renderChart(
-          filterPosition = d3.select("#vis-match-player .btn-filter-position .active").attr("d"),
-          filterOutcome = d3.select("#vis-match-player .btn-filter-outcome .active").attr("d"),
-          // filterHero = d3.select("#vis-match-player .btn-filter-hero button").html(),
-          filterIndicator = d3.select("#vis-match-player .btn-filter-indicator .active").attr("d")
+          filterPosition = d3.select("#vis-match .btn-filter-position .active").attr("d"),
+          filterOutcome = d3.select("#vis-match .btn-filter-outcome .active").attr("d"),
+          // filterHero = d3.select("#vis-match .btn-filter-hero button").html(),
+          filterIndicator = d3.select("#vis-match .btn-filter-indicator .active").attr("d")
         );
       });
 
-    d3.select("#vis-match-player .btn-filter-outcome")
+    d3.select("#vis-match .btn-filter-outcome")
       .selectAll("button")
       .on("click", function() {
-        d3.select("#vis-match-player .btn-filter-outcome").selectAll("button").classed("active", false);
+        d3.select("#vis-match .btn-filter-outcome").selectAll("button").classed("active", false);
         d3.select(this).classed("active", true);
         renderChart(
-          filterPosition = d3.select("#vis-match-player .btn-filter-position .active").attr("d"),
-          filterOutcome = d3.select("#vis-match-player .btn-filter-outcome .active").attr("d"),
-          // filterHero = d3.select("#vis-match-player .btn-filter-hero button").html(),
-          filterIndicator = d3.select("#vis-match-player .btn-filter-indicator .active").attr("d")
+          filterPosition = d3.select("#vis-match .btn-filter-position .active").attr("d"),
+          filterOutcome = d3.select("#vis-match .btn-filter-outcome .active").attr("d"),
+          // filterHero = d3.select("#vis-match .btn-filter-hero button").html(),
+          filterIndicator = d3.select("#vis-match .btn-filter-indicator .active").attr("d")
         );
       });
 
-    // d3.select("#vis-match-player .btn-filter-hero")
+    // d3.select("#vis-match .btn-filter-hero")
     //   .selectAll("li")
     //   .on("click", function() {
-    //     d3.select("#vis-match-player .btn-filter-hero").select("button").html(d3.select(this).html());
+    //     d3.select("#vis-match .btn-filter-hero").select("button").html(d3.select(this).html());
     //     renderChart(
-    //       filterPosition = d3.select("#vis-match-player .btn-filter-position .active").attr("d"),
-    //       filterOutcome = d3.select("#vis-match-player .btn-filter-outcome .active").attr("d"),
-    //       filterHero = d3.select("#vis-match-player .btn-filter-hero button").html(),
-    //       filterIndicator = d3.select("#vis-match-player .btn-filter-indicator .active").attr("d")
+    //       filterPosition = d3.select("#vis-match .btn-filter-position .active").attr("d"),
+    //       filterOutcome = d3.select("#vis-match .btn-filter-outcome .active").attr("d"),
+    //       filterHero = d3.select("#vis-match .btn-filter-hero button").html(),
+    //       filterIndicator = d3.select("#vis-match .btn-filter-indicator .active").attr("d")
     //     );
     //   });
 
-    d3.select("#vis-match-player .btn-filter-indicator")
+    d3.select("#vis-match .btn-filter-indicator")
       .selectAll("button")
       .on("click", function() {
-        d3.select("#vis-match-player .btn-filter-indicator").selectAll("button").classed("active", false);
+        d3.select("#vis-match .btn-filter-indicator").selectAll("button").classed("active", false);
         d3.select(this).classed("active", true);
         renderChart(
-          filterPosition = d3.select("#vis-match-player .btn-filter-position .active").attr("d"),
-          filterOutcome = d3.select("#vis-match-player .btn-filter-outcome .active").attr("d"),
-          // filterHero = d3.select("#vis-match-player .btn-filter-hero button").html(),
-          filterIndicator = d3.select("#vis-match-player .btn-filter-indicator .active").attr("d")
+          filterPosition = d3.select("#vis-match .btn-filter-position .active").attr("d"),
+          filterOutcome = d3.select("#vis-match .btn-filter-outcome .active").attr("d"),
+          // filterHero = d3.select("#vis-match .btn-filter-hero button").html(),
+          filterIndicator = d3.select("#vis-match .btn-filter-indicator .active").attr("d")
         );
       });
+
+    // Define navbar behaviour
+    d3.select("#navbar .btn-vis-match")
+      .on("click", function() {
+        if(!d3.select(this).classed("active")) {
+          d3.select("#navbar").selectAll("button").classed("active", false);
+          d3.select(this).classed("active", true);
+          d3.selectAll(".visualization").style("display", "none");
+          d3.select("#" + d3.select(this).attr("d")).style("display", "block");
+          d3.selectAll("svg").select("g").selectAll("*").remove();
+          renderChart(
+            filterPosition = d3.select("#vis-match .btn-filter-position .active").attr("d"),
+            filterOutcome = d3.select("#vis-match .btn-filter-outcome .active").attr("d"),
+            // filterHero = d3.select("#vis-match .btn-filter-hero button").html(),
+            filterIndicator = d3.select("#vis-match .btn-filter-indicator .active").attr("d")
+          );
+        }
+      })
   })

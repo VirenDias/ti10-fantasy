@@ -29,12 +29,12 @@ d3.csv("./resources/ti10_fantasy_points.csv")
     // Plot the chart --------------------------------------------------------------------------------------------------
     const relevantData = d3.rollup(rawData, g => d3.mean(g, d => d.total), d => d.position, d => d.outcome);
     relevantData.forEach(function(value, key) {
-        value.set("All Games", d3.mean(rawData.filter(d => d.position == key), d => d.total));
-        value.set("Wins", value.get("Win"));
-        value.set("Losses", value.get("Loss"));
-        value.delete("Win");
-        value.delete("Loss");
-      });
+      value.set("All Games", d3.mean(rawData.filter(d => d.position == key), d => d.total));
+      value.set("Wins", value.get("Win"));
+      value.set("Losses", value.get("Loss"));
+      value.delete("Win");
+      value.delete("Loss");
+    });
 
     const xScale = d3.scaleBand()
       .domain(["Carry", "Mid", "Off", "Soft Support", "Hard Support"])
@@ -57,39 +57,42 @@ d3.csv("./resources/ti10_fantasy_points.csv")
       .domain([0, yMax])
       .rangeRound([0, canvasHeight - topPadding - bottomPadding])
 
-    chartGroup.selectAll("g")
-      .data(relevantData)
-      .enter()
-      .append("g")
-      .attr("transform", d => "translate(" + (xScale(d[0]) + canvasWidth - leftPadding - rightPadding) + ", 0)")
-      .style("opacity", 0)
-      .transition()
-      .duration(750)
-      .attr("transform", d => "translate(" + xScale(d[0]) + ", 0)")
-      .style("opacity", 1);
+    function renderChart() {
+      chartGroup.selectAll("g")
+        .data(relevantData)
+        .enter()
+        .append("g")
+        .attr("transform", d => "translate(" + (xScale(d[0]) + canvasWidth - leftPadding - rightPadding) + ", 0)")
+        .style("opacity", 0)
+        .transition()
+        .duration(750)
+        .attr("transform", d => "translate(" + xScale(d[0]) + ", 0)")
+        .style("opacity", 1);
 
-    chartGroup.selectAll("g")
-      .selectAll("rect")
-      .data(d => d[1])
-      .enter()
-      .append("rect")
-      .attr("data-bs-toggle", "tooltip")
-      .attr("data-bs-html", "true")
-      .attr("title", d => "<b>" + d[0] + "</b><br>" + d[1].toFixed(2))
-      .attr("x", d => xSubScale(d[0]))
-      .attr("y", d => yScale(d[1]))
-      .attr("width", xSubScale.bandwidth())
-      .attr("height", d => yHeight(d[1]))
-      .attr("fill", function(d) {
-        switch (d[0]) {
-          case "All Games":
-            return "#3b4994";
-          case "Wins":
-            return "#5ac8c8";
-          case "Losses":
-            return "#be64ac"
-        }
-      });
+      chartGroup.selectAll("g")
+        .selectAll("rect")
+        .data(d => d[1])
+        .enter()
+        .append("rect")
+        .attr("data-bs-toggle", "tooltip")
+        .attr("data-bs-html", "true")
+        .attr("title", d => "<b>" + d[0] + "</b><br>" + d[1].toFixed(2))
+        .attr("x", d => xSubScale(d[0]))
+        .attr("y", d => yScale(d[1]))
+        .attr("width", xSubScale.bandwidth())
+        .attr("height", d => yHeight(d[1]))
+        .attr("fill", function(d) {
+          switch (d[0]) {
+            case "All Games":
+              return "#3b4994";
+            case "Wins":
+              return "#5ac8c8";
+            case "Losses":
+              return "#be64ac"
+          }
+        });
+    }
+    renderChart();
 
     // Render the axes -------------------------------------------------------------------------------------------------
     const axisTitleFontSize = 14;
@@ -169,7 +172,7 @@ d3.csv("./resources/ti10_fantasy_points.csv")
 
     legendGroup.append("rect")
       .attr("x", 0)
-      .attr("y", 2*legendItemSpacing)
+      .attr("y", 2 * legendItemSpacing)
       .attr("width", dimension)
       .attr("height", dimension)
       .style("fill", "#be64ac");
@@ -177,7 +180,7 @@ d3.csv("./resources/ti10_fantasy_points.csv")
     legendGroup.append("text")
       .text("Losses")
       .attr("x", dimension + 4)
-      .attr("y", 2* legendItemSpacing + dimension / 2)
+      .attr("y", 2 * legendItemSpacing + dimension / 2)
       .style("text-anchor", "start")
       .style("alignment-baseline", "central")
       .style("font-size", legendFontSize);
@@ -197,5 +200,18 @@ d3.csv("./resources/ti10_fantasy_points.csv")
       .on("mouseout", function() {
         d3.select(this)
           .style("fill", d3.color(d3.select(this).attr("fill")));
+      })
+
+    // Define navbar behaviour
+    d3.select("#navbar .btn-vis-position")
+      .on("click", function() {
+        if (!d3.select(this).classed("active")) {
+          d3.select("#navbar").selectAll("button").classed("active", false);
+          d3.select(this).classed("active", true);
+          d3.selectAll(".visualization").style("display", "none");
+          d3.select("#" + d3.select(this).attr("d")).style("display", "block");
+          d3.selectAll("svg").select("g").selectAll("*").remove();
+          renderChart();
+        }
       })
   })

@@ -11,9 +11,18 @@
 <body>
   <div class="container">
     <h1 class="display-1 text-center pt-4 pb-4">Hawkie's TI10 Fantasy Visualizations</h1>
+    <div id="navbar" class="text-center">
+      <button type="button" class="btn btn-outline-dark active btn-vis-player" d="vis-player">Players</button>
+      <button type="button" class="btn btn-outline-dark btn-vis-position" d="vis-position">Positions</button>
+      <button type="button" class="btn btn-outline-dark btn-vis-hero" d="vis-hero">Heroes</button>
+      <button type="button" class="btn btn-outline-dark btn-vis-player-hero" d="vis-player-hero">Player-Hero Combos</button>
+      <button type="button" class="btn btn-outline-dark btn-vis-indicator" d="vis-indicator">Indicators</button>
+      <button type="button" class="btn btn-outline-dark btn-vis-match" d="vis-match">Matches</button>
+      <button type="button" class="btn btn-outline-dark btn-vis-comparison" d="vis-comparison">TI10 vs. Pre-TI10</button>
+    </div>
 
     <!-- Player visualization -->
-    <div id="vis-player" style="padding: 1.5rem 0;">
+    <div id="vis-player" class="visualization" style="padding: 1.5rem 0;">
       <h3>Player-wise Statistics</h3>
       <div class="row">
         <div class="col-md-auto">
@@ -46,12 +55,12 @@
     </div>
 
     <!-- Position visualization -->
-    <div id="vis-position" style="padding: 1.5rem 0;">
+    <div id="vis-position" class="visualization" style="padding: 1.5rem 0; display: none;">
       <h3>Position-wise Statistics</h3>
     </div>
 
     <!-- Hero visualization -->
-    <div id="vis-hero" style="padding: 1.5rem 0;">
+    <div id="vis-hero" class="visualization" style="padding: 1.5rem 0; display: none;">
       <h3>Hero-wise Statistics</h3>
       <p><em>Note: A minimum of 5 games is required after applying the selected filters.</em></p>
       <div class="row">
@@ -84,7 +93,7 @@
     </div>
 
     <!-- Player-hero visualization -->
-    <div id="vis-player-hero" style="padding: 1.5rem 0;">
+    <div id="vis-player-hero" class="visualization" style="padding: 1.5rem 0; display: none;">
       <h3>Player-Hero–wise Statistics</h3>
       <p><em>Note: A minimum of 5 games is required after applying the selected filters.</em></p>
       <div class="row">
@@ -109,7 +118,7 @@
     </div>
 
     <!-- Indicator visualization -->
-    <div id="vis-indicator" style="padding: 1.5rem 0;">
+    <div id="vis-indicator" class="visualization" style="padding: 1.5rem 0; display: none;">
       <h3>Indicator-wise Statistics</h3>
       <div class="row">
         <div class="col-md-auto">
@@ -141,9 +150,9 @@
       </div>
     </div>
 
-    <!-- Match-player visualization -->
-    <div id="vis-match-player" style="padding: 1.5rem 0;">
-      <h3>Match-Player–wise Statistics</h3>
+    <!-- Match visualization -->
+    <div id="vis-match" class="visualization" style="padding: 1.5rem 0; display: none;">
+      <h3>Match-wise Statistics</h3>
       <div class="row">
         <div class="col-md-auto">
           <h6>Filter by position</h6>
@@ -196,18 +205,44 @@
       </div>
     </div>
 
+    <!-- Comparison visualization -->
+    <div id="vis-comparison" class="visualization" style="padding: 1.5rem 0; display: none;">
+      <h3>TI10 vs. Pre-TI10 Comparison</h3>
+      <div class="row">
+        <div class="col-md-auto">
+          <h6>Filter by position</h6>
+          <div class="btn-group btn-filter-position">
+            <button type="button" class="btn btn-outline-dark btn-sm active" d="all">All</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="carry">Carry</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="mid">Mid</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="off">Off</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="soft support">Soft Support</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="hard support">Hard Support</button>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <h6>Filter by outcome</h6>
+          <div class="btn-group btn-filter-outcome">
+            <button type="button" class="btn btn-outline-dark btn-sm active" d="all">All</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="win">Wins</button>
+            <button type="button" class="btn btn-outline-dark btn-sm" d="loss">Losses</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
 
-  <!-- <script src="./js/all.js"></script> -->
   <script src="./js/vis-player.js"></script>
   <script src="./js/vis-position.js"></script>
   <script src="./js/vis-hero.js"></script>
   <script src="./js/vis-player-hero.js"></script>
   <script src="./js/vis-indicator.js"></script>
-  <script src="./js/vis-match-player.js"></script>
+  <script src="./js/vis-match.js"></script>
+  <script src="./js/vis-comparison.js"></script>
 </body>
 
 </html>
