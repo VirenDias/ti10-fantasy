@@ -91,6 +91,23 @@ d3.csv("./resources/ti10_fantasy_points.csv")
               return "#be64ac"
           }
         });
+
+      // Activate tooltips -----------------------------------------------------------------------------------------------
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+
+      // Define mouseover behaviour --------------------------------------------------------------------------------------
+      chartGroup.selectAll("rect")
+        .on("mouseover", function() {
+          d3.select(this)
+            .style("fill", d3.color(d3.select(this).attr("fill")).brighter(1));
+        })
+        .on("mouseout", function() {
+          d3.select(this)
+            .style("fill", d3.color(d3.select(this).attr("fill")));
+        })
     }
     renderChart();
 
@@ -184,23 +201,6 @@ d3.csv("./resources/ti10_fantasy_points.csv")
       .style("text-anchor", "start")
       .style("alignment-baseline", "central")
       .style("font-size", legendFontSize);
-
-    // Activate tooltips -----------------------------------------------------------------------------------------------
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
-
-    // Define mouseover behaviour --------------------------------------------------------------------------------------
-    chartGroup.selectAll("rect")
-      .on("mouseover", function() {
-        d3.select(this)
-          .style("fill", d3.color(d3.select(this).attr("fill")).brighter(1));
-      })
-      .on("mouseout", function() {
-        d3.select(this)
-          .style("fill", d3.color(d3.select(this).attr("fill")));
-      })
 
     // Define navbar behaviour
     d3.select("#navbar .btn-vis-position")
