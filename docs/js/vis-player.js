@@ -78,9 +78,12 @@ d3.csv("./resources/ti10_fantasy_points.csv")
             relevantData,
             (a, b) => d3.ascending(a.toString().toLowerCase(), b.toString().toLowerCase())
           );
+          chartGroup.selectAll("rect")
+            .sort((a, b) => d3.ascending(a.toString().toLowerCase(), b.toString().toLowerCase()));
           break;
         case "value":
           sortedData = d3.sort(relevantData, d => d[1]);
+          chartGroup.selectAll("rect").sort((a, b) => d3.ascending(a[1], b[1]));
           break;
       }
 
@@ -196,7 +199,7 @@ d3.csv("./resources/ti10_fantasy_points.csv")
     // Define navbar behaviour
     d3.select("#navbar .btn-vis-player")
       .on("click", function() {
-        if(!d3.select(this).classed("active")) {
+        if (!d3.select(this).classed("active")) {
           d3.select("#navbar").selectAll("button").classed("active", false);
           d3.select(this).classed("active", true);
           d3.selectAll(".visualization").style("display", "none");

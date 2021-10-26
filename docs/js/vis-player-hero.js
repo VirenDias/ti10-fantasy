@@ -96,9 +96,12 @@ d3.csv("./resources/ti10_fantasy_points.csv")
             flattenedData,
             (a, b) => d3.ascending(a.toString().toLowerCase(), b.toString().toLowerCase())
           );
+          chartGroup.selectAll("rect")
+            .sort((a, b) => d3.ascending(a.toString().toLowerCase(), b.toString().toLowerCase()));
           break;
         case "value":
           sortedData = d3.sort(flattenedData, d => d[1]);
+          chartGroup.selectAll("rect").sort((a, b) => d3.ascending(a[1], b[1]));
           break;
       }
 
